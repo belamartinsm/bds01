@@ -1,17 +1,19 @@
 package com.devsuperior.bds01.dto;
 
+import java.io.Serial;
 import java.io.Serializable;
-
 import com.devsuperior.bds01.entities.Employee;
 
 public class EmployeeDTO implements Serializable {
+
+	@Serial
 	private static final long serialVersionUID = 1L;
-	
+
 	private Long id;
 	private String name;
 	private String email;
 	private Long departmentId;
-	
+
 	public EmployeeDTO() {
 	}
 

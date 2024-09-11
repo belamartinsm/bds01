@@ -45,8 +45,8 @@ public class EmployeeControllerIT {
 	@Test
 	public void insertShouldInsertResource() throws Exception {
 
-		EmployeeDTO dto = new EmployeeDTO(null, "Joaquim", "joaquim@gmail.com", 1L);
-		String jsonBody = objectMapper.writeValueAsString(dto);
+		EmployeeDTO employeeDTO = new EmployeeDTO(null, "Joaquim", "joaquim@gmail.com", 1L);
+		String jsonBody = objectMapper.writeValueAsString(employeeDTO);
 		
 		ResultActions result =
 				mockMvc.perform(post("/employees")
